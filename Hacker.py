@@ -81,7 +81,7 @@ async def all(event):
   elif event.is_reply:
     mode = "text_on_reply"
     msg = await event.get_reply_message()
-    if msg = shykillrr:
+    if msg == shykillrr:
         return await event.respond("__I Can't Mention Members For Older Messages! (messages which are sent before I'm added to group)__")
   else:
     return await event.respond("__Reply To a Message Or Give Me Some Text To Mention Others\n\nMade bY @shykiller !__")

@@ -26,7 +26,7 @@ async def start(event):
     buttons=(
       [
         Button.url('✨𝙎𝙐𝙋𝙋𝙊𝙍𝙏', 'https://t.me/Shykillersupport'),
-        Button.url('📦 𝙎𝙊𝙐𝙍𝘾𝙀', ' https://t.me/Shykillersupport'),
+        Button.url('📦 𝙎𝙊𝙐𝙍𝘾𝙀', ' https://t.me/Shykillersupport')
       ]
     )
   )
@@ -39,8 +39,8 @@ async def help(event):
     link_preview=False,
     buttons=(
       [
-        Button.url('✨𝙎𝙐𝙋𝙋𝙊𝙍𝙏', 'https://t.me/JaiHindChatting'),
-        Button.url('📦 𝙎𝙊𝙐𝙍𝘾𝙀', 'https://github.com/rakeshyt/DevilTagAllBot')
+        Button.url('✨𝙎𝙐𝙋𝙋𝙊𝙍𝙏', ' https://t.me/Shykillersupport'),
+        Button.url('📦 𝙎𝙊𝙐𝙍𝘾𝙀', 'https://t.me/Shykillersupport')
       ]
     )
   )
@@ -96,7 +96,7 @@ async def all(event):
     usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
     if usrnum == 5:
       if mode == "text_on_cmd":
-        txt = f"{usrtxt}\n\n{msg}\n\nMade bY @JaiHindChatting ✌️🔥"
+        txt = f"{usrtxt}\n\n{msg}\n\nMade bY @shykiller ✌️🔥"
         await client.send_message(chat_id, txt)
       elif mode == "text_on_reply":
         await msg.reply(usrtxt)
@@ -111,7 +111,7 @@ async def all(event):
 @client.on(events.NewMessage(pattern="^/cancel$"))
 async def cancel_spam(event):
   if not event.chat_id in spam_chats:
-    return await event.respond('__There Is No Proccess On Going @JaiHindChatting...__')
+    return await event.respond('__There Is No Proccess On Going @shykiller...__')
   else:
     try:
       spam_chats.remove(event.chat_id)
@@ -119,5 +119,5 @@ async def cancel_spam(event):
       pass
     return await event.respond('__Stopped.__')
 
-print(">> HACKER TAGALL STARTED @JaiHindChatting<<")
+print(">> Shykiller TAGALL STARTED @shykiller<<")
 client.run_until_disconnected()

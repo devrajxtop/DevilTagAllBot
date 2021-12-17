@@ -49,7 +49,7 @@ async def help(event):
 async def all(event):
   chat_id = event.chat_id
   if event.is_private:
-    return await event.respond("__This command Can Be Use In Groups And Channels @JaiHindChatting !__")
+    return await event.respond("__This command Can Be Use In Groups And Channels @shykiller !__")
   
   is_admin = False
   try:
@@ -71,7 +71,7 @@ async def all(event):
     ):
       is_admin = True
   if not is_admin:
-    return await event.respond("__Only Admins Can Mention All\n\nFor More Go On @JaiHindChatting !__")
+    return await event.respond("__Only Admins Can Mention All\n\nFor More Go On @shykiller !__")
   
   if event.pattern_match.group(1) and event.is_reply:
     return await event.respond("__Give me one argument!__")
@@ -84,7 +84,7 @@ async def all(event):
     if msg == None:
         return await event.respond("__I Can't Mention Members For Older Messages! (messages which are sent before I'm added to group)__")
   else:
-    return await event.respond("__Reply To a Message Or Give Me Some Text To Mention Others\n\nMade bY @JaiHindChatting !__")
+    return await event.respond("__Reply To a Message Or Give Me Some Text To Mention Others\n\nMade bY @shykiller !__")
   
   spam_chats.append(chat_id)
   usrnum = 0
